@@ -1,0 +1,22 @@
+{
+  "name": "data-etl-object-mapper",
+  "version": "1.0.0",
+  "description": "Simple Javascript Object Mapper",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simonefuoco/data-etl-object-mapper.git"
+  },
+  "author": "Simone Fuoco",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/simonefuoco/data-etl-object-mapper/issues"
+  },
+  "homepage": "https://github.com/simonefuoco/data-etl-object-mapper#readme",
+  "dependencies": {
+    "lodash": "^4.17.11"
+  }
+}
