@@ -11,8 +11,14 @@ const fill = (args) => {
     let target = {};
 
     for (const [originPath, targetPath] of Object.entries(mapping)) {
-        let originValue = _.cloneDeepWith(_.get(args.origin, originPath));
-        _.setWith(target, targetPath, originValue);
+        if(originPath !== "@target_fields") {
+            let originValue = _.cloneDeepWith(_.get(args.origin, originPath));
+            _.setWith(target, targetPath, originValue);
+        }
+    }
+
+    for (const [targetPath, targetValue] of Object.entries(mapping['@target_fields'])) {
+        _.setWith(target, targetPath, targetValue);
     }
 
     return target;
